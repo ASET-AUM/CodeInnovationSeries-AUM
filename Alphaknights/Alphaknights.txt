@@ -1,0 +1,81 @@
+====================== FUNASSIGNS ======================
+
+Funsigns is a reward-based web platform where students can enjoy doing assignments while earning rewards.
+
+We hate doing class assignments because it had no incentive for the student other than getting good grades. Assignments are however an important part of learning. One needs to get a sense of progress in the short-term while doing assignments for them to enjoy it.
+
+We built Funsigns with elements of Gamification, so that students complete assignments as if they were levels in a video game.
+
+== DEMO VIDEO ==
+https://drive.google.com/file/d/1wIYHZjX9pBGH0TrZ_cwJFL0mwb5Ji9e9/view?usp=sharing
+
+== PPT ==
+https://drive.google.com/file/d/1YG64MMJHeqdspVpgxa3tPo6-1WwUutUu/view?usp=sharing
+
+== LINK TO WEBSITE ==
+https://funassigns.netlify.app/
+
+== FEATURES ==
+- Login & Registration - Student and Faculty
+- Faculty can add courses with assignments
+- Students receive badges on completing assignments
+- Plagiarism check when submitting assignment using 3rd party REST API
+- Progress bar for tracking monthly assignment submission goals
+
+== TECHNOLOGIES USED ==
+- React (Frontend)
+- SASS (Styling)
+- Redux (State Management)
+- MongoDB (DB)
+- Strapi (Backend)
+- Heroku (Hosting Backend)
+- Netlify (Hosting Frontend)
+
+The frontend and backend were built separately.
+
+========= FRONTEND =========
+Built using React
+
+== DIRECTORY STRUCURE ==
+- `public/` contains the files copied to build directory at build time
+- `src/` contains the source code
+- `src/scss/` contains stylesheets written in sass which is a css preprocessor
+- `src/components/` contains the various components, and pages rendered in our app. React-Router-Dom is used for navigation between these pages. The Pages are also enabled with lazy loading to save resources and improve client side performance. Our store state is accessed through a mapStateToProps function wired up by react-redux's connect function.
+- `src/images/` contains image assets
+- `src/reducers/` Used for state management using redux. reducers take our actions and state as arguments and return a new modified state. We have divided our reducers into different files based on their functionality and combined them in the index.js file.
+- `src/actions/` actions are plain JavaScript objects that have a type field. Any extra data that is sent by our action is stored in the payload field. We have also used Redux Thunk as a middleware of async operations.
+- `src/` contains the source code
+
+== ENVIRONMENT SETUP ==
+0. Install Node.js
+1. Install dependencies
+```
+yarn
+```
+2. Rename `example.env` to `.env` and replace the REACT_APP_PLAG_API key value with an API key from https://www.prepostseo.com/plagiarism-checker-api.
+3. Start dev server
+```
+yarn start
+```
+4. The dev server will launch on `http://localhost:3000`
+
+========= BACKEND =========
+Built using Strapi
+
+== DIRECTORY STRUCURE ==
+- `src/` contains the source code
+- `public/` contains the files copied to build directory at build time
+
+== ENVIRONMENT SETUP ==
+0. Install Node.js
+1. Install dependencies
+```
+yarn
+```
+2. Start dev server
+```
+yarn start
+```
+3. The server will launch on `http://localhost:1337`
+Navigate to `http://localhost:1337/admin` in your browser to configure strapi
+

@@ -1,0 +1,23 @@
+export const LOGIN = 'LOGIN'
+export const LOGOUT = 'LOGOUT'
+
+export const CREATE_USER = 'CREATE_USER'
+
+export const CREATE_ASSIGNMENT = 'CREATE_ASSIGNMENT'
+export const DELETE_ASSIGNMENT = 'DELETE_ASSIGNMENT'
+export const EDIT_ASSIGNMENT = 'EDIT_ASSIGNMENT'
+export const GET_ASSIGNMENT = 'GET_ASSIGNMENT'
+export const GET_ASSIGNMENTS = 'GET_ASSIGNMENTS'
+
+export const GET_COURSES = 'GET_COURSES'
+export const CREATE_COURSE = 'CREATE_COURSE'
+export const DELETE_COURSE = 'DELETE_COURSE'
+export const EDIT_COURSE = 'EDIT_COURSE'
+export const GET_COURSE = 'GET_COURSE'
+
+export const GET_STUDENTS = 'GET_STUDENTS'
+export const GET_STUDENT = 'GET_STUDENT'
+export const EDIT_STUDENT = 'EDIT_STUDENT'
+export const DELETE_STUDENT = 'EDIT_STUDENT'
+
+export const GET_LOGGED_IN_USER = 'GET_LOGGED_IN_USER'

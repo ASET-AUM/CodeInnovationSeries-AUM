@@ -39,3 +39,8 @@ Project Directory-
 8. Immortals.md
 9. Pocket_Baymax_Presentation(1).pptx
 10. covid19.py (original implementation)
+
+Instructions-
+PocketBaymax.py - Run in any python enviroment using pandas, sklearn and pyttsx3.
+covid19.py - Run in any python enviroment
+Note- PocktBaymax.py must be present in the same directory as all the .csv files simultaneously during execution

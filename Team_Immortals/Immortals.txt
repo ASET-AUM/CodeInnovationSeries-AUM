@@ -37,8 +37,7 @@ Project Directory-
 6. Testing.csv
 7. Training.csv
 8. Immortals.md
-9. Pocket_Baymax_Presentation(1).pptx
-10. covid19.py (original implementation)
+9. covid19.py (original implementation)
 
 Instructions-
 PocketBaymax.py - Run in any python enviroment using pandas, sklearn and pyttsx3.

@@ -1,0 +1,19 @@
+Introducing "Pocket Baymax", a python based program with a heart. It is designed to predict mental, emotional and physical illnesses according to the symptoms provided by the user. It uses a decision tree algorithm to do so and also provides primary care suggestions to the user before a health professional is contacted. It currently has a small database of diseases and symptoms which it refers to before giving a prognosis.
+
+
+As of now, the program is just a rudimentary backend that is used on a terminal. However, we plan on pursuing this project beyond this Hackathon as we see real potential.
+
+Features to be included in the future as a part of this project-
+1.  An advanced Covid-19 risk calculator, in lieu of the current global situation. This feature will try to give you a estimate of how likely you are to contract Covid-19.
+2. A medical facility locator in case the user is in an unknown place and needs directional assistance.
+3. A feature that allows the user to have a one-on-one video conference with a doctor for a more accurate analysis in case the user is unable to visit a physician.
+4. A data collection feature that takes input from the user in the form of questionnaires to detect and diagnose mental health ailments such as depression, PTSD (Post Traumatic Stress Disorder), Schizophrenia etc.
+5. To give the user an option/button that enables them to call an ambulance immediately in the event of an emergency.
+6. To have intergrations in the form of IoT and hence draw data about the user's sleep cycle and cardiac status.
+"Pocket Baymax" will be presented in the form of a user-friendly UI that has calming visuals that are easy on the eyes as the user may be anxious or in state of panic while using our software, the colors and shapes will be non-threatening and huggable, just like our inspiration "Baymax" from the movie "Big Hero 6".
+
+The Team-
+1. Jash Wakaskar (Team Leader)
+2. Srihari Narayan
+3. Harsh Hari
+4. Ishaan Pandita

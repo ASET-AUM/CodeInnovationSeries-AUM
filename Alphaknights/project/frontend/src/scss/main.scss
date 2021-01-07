@@ -1,0 +1,244 @@
+@import './custom-variables.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/hover.css/css/hover-min.css';
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $alt_highlight_color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: $primary;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.font-normal {
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  max-height: 300px;
+}
+
+.alt {
+  background-color: $alt_background;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.anchor-plain {
+  a:link {
+    color: $text_color;
+  }
+
+  a:visited {
+    color: $text_color;
+  }
+
+  a:hover {
+    color: $text_color;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: $text_color;
+  }
+}
+
+nav {
+  background-color: $nav_bg;
+  min-height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-menu {
+  background-color: $nav_bg !important;
+  a {
+    color: #fff !important;
+  }
+  a:hover {
+    color: #000 !important;
+    background-color: $alt_highlight_color !important;
+  }
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+#brand-logo {
+  display: inline-block;
+  width: auto;
+  height: 5vh;
+}
+
+#brand-name {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+#basic-navbar-nav {
+  transition: height 0.5s ease-in-out;
+}
+
+form {
+  max-width: 450px;
+}
+
+textarea {
+  min-height: 150px;
+  max-height: 300px;
+}
+
+.custom-input {
+  background-color: $form-bg;
+  color: $form-color;
+  &::placeholder {
+    color: $placeholder-color;
+  }
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $placeholder-color;
+  }
+  &::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $placeholder-color;
+  }
+  &:focus {
+    background-color: $form-focus-bg;
+    color: $form-color;
+  }
+  &:disabled {
+    background-color: $form-disabled-bg;
+    color: $placeholder-color;
+  }
+}
+
+.modal-content {
+  background-color: $body-bg;
+}
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+footer {
+  background-color: $nav-bg;
+  text-align: center;
+  width: 100%;
+  font-family: $normal_text_font;
+  a {
+    text-decoration: none;
+    //color: #f8f9fa;
+    &:hover {
+      //color: #fff;
+      color: $alt_highlight_color;
+      text-decoration: none;
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.form-label {
+  //color: $purple;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
